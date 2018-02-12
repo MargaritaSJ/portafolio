@@ -1,0 +1,281 @@
+.pacific {
+  font-family: "Pacifico", cursive;
+}
+
+.raleway {
+  font-family: "Raleway", sans-serif;
+}
+
+.lato {
+  font-family: "Lato", sans-serif;
+}
+
+/* --- Portada --- */
+
+.section-header {
+  background: rgb(9, 179, 136);
+  background: linear-gradient(135deg, #4AD7B8 0%, #3cfcac 100%);
+  height: 100vh;
+  color: #3c4658;
+  position: relative;
+}
+
+.title h1 {
+  font-size: 3rem;
+  color: rgb(245, 80, 127);
+}
+
+.title .study {
+  font-size: 1.5rem;
+  color: #3c4658;
+}
+
+.nav-corner {
+  width: 100%;
+  height: 4rem;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index:5;
+}
+
+.nav-corner:before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-color: #3c4658;
+  z-index: -1;
+  bottom: 0;
+  transform-origin: left bottom;
+  transform: skewY(-5deg);
+}
+
+.menu {
+  font-size: 1.8em;
+  color: #FFF;
+}
+
+.menu:hover {
+  color: rgb(245, 80, 127);
+}
+
+.content-menu {
+  padding: 1.4em;
+}
+
+.name {
+  padding-top: 13em;
+}
+
+.down {
+  color: #3c4658;
+  position: absolute;
+  right: 0.5em;
+  top: 10em;
+  z-index: 5;
+  font-size: 3em;
+}
+
+.down:hover {
+  color: rgb(245, 80, 127);
+}
+
+.icons {
+  width: 3rem;
+  margin: 0.5rem;
+}
+
+.github {
+  width: 4rem;
+  margin: 0.5rem;
+}
+
+/* Menú */
+
+.menu:hover  {
+  color:  rgb(245, 80, 127);
+}
+
+.list {
+  padding-top: 4.7em;
+  position: relative;
+}
+
+.list .decoration {
+  margin: 0;
+  padding: 0;
+}
+
+.decoration li {
+  list-style: none;
+  margin-bottom: 1.2em;
+}
+
+.decoration li a {
+  color: #FFF;
+  font-size: 2em;
+}
+
+.decoration li a:hover {
+  text-decoration: none;
+  color:  rgb(245, 80, 127);
+}
+
+/* About */
+
+.about {
+  z-index: -5;
+  height: 100vh;
+  padding-top: 4em;
+}
+
+.icons-title {
+  width: 11%;
+  margin-right: 0.5em;
+}
+
+.photo{
+  background-image: url("../assets/images/profile.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border-bottom-left-radius: 10%;
+  margin: 1rem;
+  box-shadow: inset 0px 0px 55px 13px rgba(33, 30, 30, 0.8);
+}
+
+.descrip {
+  font-size: 1.4em;
+  padding-top: 1.5em;
+}
+
+.arrow-down {
+  top: 25rem;
+}
+
+/* Skills */
+
+.skills {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  padding-top: 6rem;
+}
+
+.habilidades {
+  margin-bottom: 1.2rem;
+}
+
+.habilidades .hvr-pop {
+  display: inline-block;
+  font-size: 5rem;
+  padding: 0.15rem;
+}
+
+.habilidades .hvr-pop:hover {
+  color:rgb(245, 80, 127);
+}
+
+.sub-skills {
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+/* Proyectos */
+
+.height-web {
+  height: 157vh;
+}
+
+.projects {
+  height: 205vh;
+  width: 100%;
+  position: relative;
+}
+
+.top {
+  padding-top: 6em;
+}
+
+.boton {
+  background-color: rgb(245, 80, 127);
+  font-family: "Lato", sans-serif;
+}
+
+.boton:hover {
+  color: #FFF;
+}
+
+.projects .top h3 {
+  margin-bottom: 0.8em;
+}
+
+.pd-work {
+  padding-top: 2.5em;
+}
+
+.shadow {
+  box-shadow: 0px 9px 5px 0px rgba(189, 183, 189, 1);
+  width: 90%;
+  position: relative;
+}
+
+.work {
+  width: 100%;
+}
+
+.tamanio-w {
+  width: 100%;
+}
+
+.code {
+  background-color: rgb(245, 80, 127);
+}
+
+.code:hover {
+  color: #FFF;
+}
+
+.info {
+  padding: 1em;
+}
+
+
+@media (min-width: 768px) {
+  .nav-corner:before {
+    color: #3c4658;
+    background-color: transparent;
+    transform: skewY(-5deg);
+  }
+  .menu {
+    color: #3c4658;
+  }
+
+  .title h1 {
+    font-size: 4rem;
+  }
+  
+  .title .study {
+    font-size: 2rem;
+    margin-top:2rem;
+  }
+
+  .down {
+    right: 0.5em;
+    top: 11em;
+    z-index: 5;
+  }
+
+  .decoration li a {
+    font-size: 2.7em;
+  }
+
+  .photo{
+    width: 420px;
+    height: 420px;
+  }
+}
